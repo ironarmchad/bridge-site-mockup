@@ -13,6 +13,7 @@ import {VideoComponent} from './video/video.component';
 import {GodStoriesComponent} from './god-stories/god-stories.component';
 import {CalendarComponent} from './calendar/calendar.component';
 import { OutOfDomainComponent } from './out-of-domain/out-of-domain.component';
+import { PostComponent } from './anouncements/post/post.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { OutOfDomainComponent } from './out-of-domain/out-of-domain.component';
     VideoComponent,
     GodStoriesComponent,
     CalendarComponent,
-    OutOfDomainComponent
+    OutOfDomainComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,

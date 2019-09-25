@@ -1,0 +1,16 @@
+<div class="post">
+  <div class="row">
+    <div class="col">
+      <h5>{{title}}</h5>
+      <ng-content></ng-content>
+    </div>
+    <div class="col-2 my-auto">
+      <a *ngIf="internalLink"
+         class="btn btn-primary"
+         routerLink="internalLink">{{buttonText}}</a>
+      <a *ngIf="externalLink && !(internalLink)"
+         class="btn btn-primary"
+         href="{{externalLink}}">{{buttonText}}</a>
+    </div>
+  </div>
+</div>
