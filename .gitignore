@@ -33,6 +33,7 @@ speed-measure-plugin*.json
 
 # misc
 /assets/img/
+/assets/video/
 /.sass-cache
 /connect.lock
 /coverage

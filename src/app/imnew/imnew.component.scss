@@ -1,0 +1,23 @@
+.backdrop {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background-color: #EE7537;
+}
+
+.start-video {
+  height: 350px;
+  margin-left: 50px;
+}
+
+.start-title{
+  padding: 10px;
+}
+
+.start-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  color: white;
+}
+
