@@ -1,4 +1,6 @@
 import {AfterViewInit, Component, Directive, ElementRef, HostListener, OnInit, ViewChild} from '@angular/core';
+import {faBullhorn, faCar, faPencilAlt} from "@fortawesome/free-solid-svg-icons";
+import {FaIconLibrary} from "@fortawesome/angular-fontawesome";
 
 
 @Component({
@@ -13,7 +15,10 @@ export class ImnewComponent implements OnInit, AfterViewInit {
   @ViewChild('startTitle', {static: true}) startTitle: ElementRef;
   @ViewChild('startVideo', {static: true}) startVideo: ElementRef;
 
-  constructor() {
+  constructor(library: FaIconLibrary) {
+    library.addIcons(faCar);
+    library.addIcons(faBullhorn);
+    library.addIcons(faPencilAlt);
   }
 
   setBackdrop() {

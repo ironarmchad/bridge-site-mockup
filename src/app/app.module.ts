@@ -14,6 +14,7 @@ import {GodStoriesComponent} from './god-stories/god-stories.component';
 import {CalendarComponent} from './calendar/calendar.component';
 import { OutOfDomainComponent } from './out-of-domain/out-of-domain.component';
 import { PostComponent } from './anouncements/post/post.component';
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 
 @NgModule({
   declarations: [
@@ -27,12 +28,13 @@ import { PostComponent } from './anouncements/post/post.component';
     GodStoriesComponent,
     CalendarComponent,
     OutOfDomainComponent,
-    PostComponent
+    PostComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbDropdownModule
+    NgbDropdownModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

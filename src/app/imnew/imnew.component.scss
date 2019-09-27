@@ -1,8 +1,9 @@
 .backdrop {
-  width: 100%;
+  width: 110%;
   position: absolute;
+  left: -30px;
   z-index: -1;
-  background-color: #EE7537;
+  background-color: tomato;
 }
 
 .start-video {
@@ -19,5 +20,24 @@
   align-items: center;
   flex-wrap: nowrap;
   color: white;
+}
+
+.info-panel {
+  display: flex;
+  margin-top: 100px;
+}
+
+.info-panel > * {
+  flex: 1 100%;
+}
+
+.info-color-box {
+}
+
+$info-text-box-padding: 30px;
+.info-text-box {
+  padding: 30px;
+  margin: auto;
+  width: 400px;
 }
 

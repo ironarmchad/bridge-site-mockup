@@ -7,11 +7,9 @@
         Something went wrong
       </video>
     </div>
-    <div class="col-4 text-center start-title" #startTitle>
+    <div class="col-4 text-center start-title" style="min-width: 400px"#startTitle>
       <h2>I'M NEW, WHAT SHOULD I KNOW?</h2>
-
-      <i class="material-icons">maximize</i>
-
+      <i class="material-icons" style="font-size: 60px;">remove</i>
       <p>
         Welcome to Bridge Christian Church. We’re glad you are here! We are a diverse group of people made up of
         families and individuals of all ages, from many different church backgrounds who are trying to live in
@@ -23,15 +21,75 @@
   </div>
 </div>
 
-<div class="row">
-  <div class="col">
-
+<div class="info-panel text-center">
+  <div class="info-color-box" style="background-color: #3d3d3d; color: white;">
+    <div class="info-text-box">
+      <fa-icon [icon]="['fas', 'car']" size="3x"></fa-icon>
+      <br><br>
+      <h3>Parking</h3>
+      <br>
+      <p>
+        At Bridge you will find special parking reserved for first time guests. Simply turn on your hazard lights as you
+        turn into the parking lot, so that the parking attendants will recognize you as a first time guest. Follow the
+        signs to designated parking.
+      </p>
+    </div>
   </div>
-  <div class="col">
 
+  <div class="info-color-box" style="background-color: silver; margin-left: 20px; margin-right: 20px">
+    <div class="info-text-box">
+      <fa-icon [icon]="['fas', 'bullhorn']" size="3x"></fa-icon>
+      <br><br>
+      <h3>Worship Services</h3>
+      <br>
+      <ul class="text-left">
+        <li>4 Identical Services - 8:15,  9:45 & 11:15am on Sunday's and 6:30pm on Thursday's</li>
+        <li>Contemporary, energetic worship led by our Creative Arts Pastor and praise band</li>
+        <li>Messages relevant to your daily life</li>
+        <li>Weekly Communion—following the sermon</li>
+        <li>Casual and comfortable attire​</li>
+        <li>Hosts at the Guest Services area to assist you with questions and show you around our facility</li>
+        <li>Complimentary coffee available in the foyer</li>
+        <li>Nursery and children's classes (age 2-5th grade) taught by screened and trained volunteers during each
+          service</li>
+        <li>Middle School class offered during the 9:45 service</li>
+        <li>A special gift for you in Meeting Room A</li>
+      </ul>
+    </div>
   </div>
-  <div class="col">
 
+  <div class="info-color-box" style="background-color: tomato; color: white">
+    <div class="info-text-box">
+      <fa-icon [icon]="['fas', 'pencil-alt']" size="3x"></fa-icon>
+      <br><br>
+      <a routerLink="/how-to-connect-quickly"><h3>Connect Quickly</h3></a>
+      <br>
+      <div class="text-left">
+        <p>
+          We also offer you several avenues to help you connect quickly and feel at home here.
+        </p>
+
+        <h5>Starting Point</h5>
+        <p>
+          Starting Point is a relaxed two-week study.
+        </p>
+
+        <h5>Connect Groups</h5>
+        <p>
+          Connect Groups are based on interests and hobbies.
+        </p>
+
+        <h5>Life Groups</h5>
+        <p>
+          Life Groups help you build relationships in a smaller setting.
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 
+​
+
+
+
+​
