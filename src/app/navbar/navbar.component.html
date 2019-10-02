@@ -1,0 +1,69 @@
+<nav class="navbar navbar-light header">
+  <div class="header-box">
+    <div class="logo">
+      <a class="nav-link" routerLink="/">
+        <img src="assets/img/bridgeLogo.webp">
+      </a>
+    </div>
+
+    <div class="links">
+      <a class="nav-link" routerLink="/announcements">Announcements</a>
+
+      <a class="nav-link" routerLink="/imnew">I'm New</a>
+
+      <div ngbDropdown>
+        <a class="nav-link" ngbDropdownToggle>About Us</a>
+        <div ngbDropdownMenu>
+          <a class="nav-link" ngbDropdownItem routerLink="/what-we-believe">What We Believe</a>
+          <a class="nav-link" ngbDropdownItem routerLink="/staff-elders">Staff & Elders</a>
+        </div>
+      </div>
+
+      <div ngbDropdown>
+        <div class="nav-link" ngbDropdownToggle>Media / Sermons</div>
+        <div ngbDropdownMenu>
+          <div class="nav-link" ngbDropdownItem routerLink="/blog">Blog</div>
+          <div class="nav-link" ngbDropdownItem routerLink="/podcast">Podcast</div>
+          <div class="nav-link" ngbDropdownItem routerLink="/video">Sermon Videos</div>
+          <div class="nav-link" ngbDropdownItem routerLink="/god-stories">God Stories</div>
+        </div>
+      </div>
+
+      <div ngbDropdown>
+        <a class="nav-link" ngbDropdownToggle>Ministries</a>
+        <div ngbDropdownMenu>
+          <a class="nav-link" ngbDropdownItem>Missions</a>
+          <a class="nav-link" ngbDropdownItem>Men's Ministry</a>
+          <a class="nav-link" ngbDropdownItem>Women's Ministry</a>
+          <a class="nav-link" ngbDropdownItem>College Ministry</a>
+          <a class="nav-link" ngbDropdownItem>Student Ministry</a>
+          <a class="nav-link" ngbDropdownItem>Children's Ministry</a>
+          <a class="nav-link" ngbDropdownItem>Connect Groups</a>
+          <a class="nav-link" ngbDropdownItem>Discipleship</a>
+          <a class="nav-link" ngbDropdownItem>Fellowship</a>
+          <a class="nav-link" ngbDropdownItem>Outreach</a>
+          <a class="nav-link" ngbDropdownItem>Prayer</a>
+          <a class="nav-link" ngbDropdownItem>Support</a>
+          <a class="nav-link" ngbDropdownItem>Worship</a>
+        </div>
+      </div>
+
+      <a class="nav-link" routerLink="/calender">Calendar</a>
+
+      <div ngbDropdown>
+        <a class="nav-link" ngbDropdownToggle>
+          Contact Us / Directions
+        </a>
+        <div ngbDropdownMenu>
+          <a ngbDropdownItem class="nav-link">Need Prayer?</a>
+          <a ngbDropdownItem class="nav-link">Tell Us Your Story</a>
+        </div>
+      </div>
+
+      <a class="nav-link">
+        Give
+      </a>
+    </div>
+  </div>
+</nav>
+

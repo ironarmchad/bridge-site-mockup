@@ -1,0 +1,15 @@
+.header {
+  background-color: lightgray;
+  margin-bottom: 50px;
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}

@@ -1,23 +1,27 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ResponsiveService} from './_services/responsive.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  private screenWidth: number;
+export class AppComponent implements OnInit {
+  isMobile: boolean;
 
-  constructor() {
-    this.getScreenSize();
+  constructor(private respServ: ResponsiveService) {
   }
 
-  @HostListener('window:resize', ['$event'])
-  getScreenSize(event?) {
-    this.screenWidth = window.innerWidth;
-
-    // Logging for finding the break points on the navbar
-    // console.log(this.screenWidth);
+  ngOnInit(): void {
+    this.onResize();
+    this.respServ.checkWidth();
   }
+
+  onResize() {
+    this.respServ.isMobile.subscribe(isMobile => {
+      this.isMobile = isMobile;
+    });
+  }
+
 
 }

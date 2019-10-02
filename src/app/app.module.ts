@@ -15,6 +15,10 @@ import {CalendarComponent} from './calendar/calendar.component';
 import { OutOfDomainComponent } from './out-of-domain/out-of-domain.component';
 import { PostComponent } from './anouncements/post/post.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { DeskHomeComponent } from './home/desk-home/desk-home.component';
+import { MobileHomeComponent } from './home/mobile-home/mobile-home.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +33,10 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
     CalendarComponent,
     OutOfDomainComponent,
     PostComponent,
+    NavbarComponent,
+    FooterComponent,
+    DeskHomeComponent,
+    MobileHomeComponent,
   ],
   imports: [
     BrowserModule,

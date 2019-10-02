@@ -93,6 +93,17 @@
     rxjs "6.4.0"
     webpack-merge "4.2.1"
 
+"@angular-devkit/core@8.2.2", "@angular-devkit/core@~8.2.0":
+  version "8.2.2"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-8.2.2.tgz#f7239b6fca785c5a85fbe7684f807b8fa41311d4"
+  integrity sha512-qA1lK/OQhNptCxoEGbTryn6yeFS1F/e/EiUTwgU/j4DkBwPyYGE8iqWBd/cgI9AVqQaRSLLhVWXtDPxoNL0TKg==
+  dependencies:
+    ajv "6.10.2"
+    fast-json-stable-stringify "2.0.0"
+    magic-string "0.25.3"
+    rxjs "6.4.0"
+    source-map "0.7.3"
+
 "@angular-devkit/core@8.3.5":
   version "8.3.5"
   resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-8.3.5.tgz#d1b58df73a379e29f3ddc1cb36cf29d8e476786e"
@@ -110,6 +121,14 @@
   integrity sha512-RMtM10kS+Docg90jzFMa4HQ+UzX95Gi5rCT/kSydEkBhp+Jeu/B0K2y67Fm2/qTdVNRCujrCpEmtiRcp1qsOQg==
   dependencies:
     "@angular-devkit/core" "8.3.5"
+    rxjs "6.4.0"
+
+"@angular-devkit/schematics@~8.2.0":
+  version "8.2.2"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-8.2.2.tgz#45699cf3df6b3330f22e657390fe3a0e5ac1f9dc"
+  integrity sha512-wAbP+IriWgTSLR4prezuFlLbxMZMGXiN0FNH2i/v8MfxNXCBiEvD4YtD/8s8YRsZs+IW7sp3bErSD/EIlS4DyQ==
+  dependencies:
+    "@angular-devkit/core" "8.2.2"
     rxjs "6.4.0"
 
 "@angular/animations@~8.2.5":
@@ -874,6 +893,23 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.25"
 
+"@nativescript/schematics@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@nativescript/schematics/-/schematics-0.7.1.tgz#785ed888423307d0ef2872739c04eedc6d403ec2"
+  integrity sha512-HyLay/AvzTc1ks4FX9zh78e+yk56Pf3kp8VbsCW8FmwFseT9rnRlR9VNk70cVaw8uscGm2ve0pdFQypinX1w3Q==
+  dependencies:
+    "@angular-devkit/core" "~8.2.0"
+    "@angular-devkit/schematics" "~8.2.0"
+    "@nativescript/tslint-rules" "~0.0.3"
+    "@phenomnomnominal/tsquery" "^3.0.0"
+
+"@nativescript/tslint-rules@~0.0.3":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@nativescript/tslint-rules/-/tslint-rules-0.0.4.tgz#96bc16be4c20310c4ce6b3c8c84c373c52656ac3"
+  integrity sha512-GqnCjOriYmYplVPiC3X0MmjTfuj4KGC6ivELtLW839si6aky2FYaoY1NSVs2jRmKlTDYcY/ezQezeoG+OS5nYQ==
+  dependencies:
+    "@phenomnomnominal/tsquery" "~3.0.0"
+
 "@ng-bootstrap/ng-bootstrap@^5.1.1":
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/@ng-bootstrap/ng-bootstrap/-/ng-bootstrap-5.1.1.tgz#513d7e1e2ee3aca233e82b5dc934f48a0417a00b"
@@ -891,6 +927,13 @@
     rxjs "6.4.0"
     tree-kill "1.2.1"
     webpack-sources "1.4.3"
+
+"@phenomnomnominal/tsquery@^3.0.0", "@phenomnomnominal/tsquery@~3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@phenomnomnominal/tsquery/-/tsquery-3.0.0.tgz#6f2f4dbf6304ff52b12cc7a5b979f20c3794a22a"
+  integrity sha512-SW8lKitBHWJ9fAYkJ9kJivuctwNYCh3BUxLdH0+XiR1GPBiu+7qiZzh8p8jqlj1LgVC1TbvfNFroaEsmYlL8Iw==
+  dependencies:
+    esquery "^1.0.1"
 
 "@schematics/angular@8.3.5":
   version "8.3.5"
@@ -3002,6 +3045,13 @@ esprima@^4.0.0:
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
   integrity sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
 
+esquery@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/esquery/-/esquery-1.0.1.tgz#406c51658b1f5991a5f9b62b1dc25b00e3e5c708"
+  integrity sha512-SmiyZ5zIWH9VM+SRUReLS5Q8a7GxtRdxEBVZpm98rJM7Sb+A9DVCndXfkeFUd3byderg+EbDkfnevfCwynWaNA==
+  dependencies:
+    estraverse "^4.0.0"
+
 esrecurse@^4.1.0:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/esrecurse/-/esrecurse-4.2.1.tgz#007a3b9fdbc2b3bb87e4879ea19c92fdbd3942cf"
@@ -3009,7 +3059,7 @@ esrecurse@^4.1.0:
   dependencies:
     estraverse "^4.1.0"
 
-estraverse@^4.1.0, estraverse@^4.1.1:
+estraverse@^4.0.0, estraverse@^4.1.0, estraverse@^4.1.1:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-4.3.0.tgz#398ad3f3c5a24948be7725e83d11a7de28cdbd1d"
   integrity sha512-39nnKffWz8xN1BU/2c79n9nB9HDzo0niYUqx6xyqUnyoAnQyyWpOTdZEeiCch8BBu515t4wp9ZmgVfVhn9EBpw==

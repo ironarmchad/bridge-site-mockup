@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ResponsiveService} from "../_services/responsive.service";
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  isMobile: boolean;
 
-  constructor() { }
+  constructor(private respServ: ResponsiveService) { }
 
   ngOnInit() {
+    this.isMobile = this.respServ.currentMobileValue;
   }
-
 }
