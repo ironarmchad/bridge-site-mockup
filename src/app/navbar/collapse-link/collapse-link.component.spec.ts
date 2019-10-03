@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MobileHomeComponent } from './mobile-home.component';
+import { CollapseLinkComponent } from './collapse-link.component';
 
-describe('MobileHomeComponent', () => {
-  let component: MobileHomeComponent;
-  let fixture: ComponentFixture<MobileHomeComponent>;
+describe('CollapseLinkComponent', () => {
+  let component: CollapseLinkComponent;
+  let fixture: ComponentFixture<CollapseLinkComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MobileHomeComponent ]
+      declarations: [ CollapseLinkComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MobileHomeComponent);
+    fixture = TestBed.createComponent(CollapseLinkComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

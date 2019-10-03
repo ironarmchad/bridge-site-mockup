@@ -1,0 +1,19 @@
+/* This file is for importing global styles into the project in the correct order */
+
+/* Abstracts */
+@import "abstracts/variables";
+
+/* Vendors */
+@import "vendors/bootstrap";
+
+/* base */
+@import "base/base";
+
+/* Layouts */
+
+/* Components */
+@import "components/navbarlike-light";
+
+/* Pages */
+
+/* Themes */

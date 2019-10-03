@@ -1,6 +1,21 @@
-.footer {
-  margin-top: 50px;
-  background-color: dimgray;
-  color: white;
-  white-space: nowrap;
+.footer-container {
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
+
+.footer-group {
+  margin: 20px;
+  text-align: center;
+}
+
+img {
+  margin: 2px;
+}
+
+.img-large {
+  height: 30px;
+}
+

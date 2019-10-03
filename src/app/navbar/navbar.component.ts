@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ResponsiveService} from '../_services/responsive.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  isMobile: boolean;
+  isCollapsed: boolean;
 
-  constructor() { }
+  constructor(private respServ: ResponsiveService) {
+    this.isCollapsed = false;
+  }
 
   ngOnInit() {
+    this.isMobile = this.respServ.currentMobileValue;
   }
 
 }
