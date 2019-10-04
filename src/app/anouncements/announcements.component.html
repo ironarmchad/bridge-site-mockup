@@ -1,24 +1,28 @@
-<div class="announcement-container">
+<div class="announcement-container"
+     [class.container-mobile]="isMobile"
+>
   <div class="announcement-group"
        [class.announcement-group-desk]="!isMobile"
        [class.announcement-group-mobile]="isMobile"
   >
     <div class="announcement-title text-center">
-      <h1>Opportunities</h1>
-      <h3>To Give & Serve</h3>
+      <h1 class="title-h1">Opportunities</h1>
+      <h3 class="title-h3">To Give & Serve</h3>
       <p>Click on any of the buttons to the right <br> for more details and to sign up.</p>
     </div>
 
+    <br>
+
     <div class="announcement-posts">
-      <app-post title="College Care Ministry" buttonText="Sign Up" internalLink="/college-ministry">
+      <app-post class = "spacer" title="College Care Ministry" buttonText="Sign&nbsp;Up" internalLink="/college-ministry">
         Two Part Ministry: #1 - College Student Requesting Care or #2 - Student Caregivers. For full details or to be a
         part of this ministry, sign up today!
       </app-post>
 
       <br>
 
-      <app-post title="Foster Care Family Night Out / Volunteers Needed"
-                buttonText="Sign Up"
+      <app-post class="spacer" title="Foster Care Family Night Out / Volunteers Needed"
+                buttonText="Sign&nbsp;Up"
                 internalLink="/out-of-domain">
         Foster Family Frenzy - Kids Night Out, Parents Night Off! Enjoy a Night out on us, while your kids hang with
         us; ​Saturday, Sept. 28 5-8pm. Sign up your family to take advantage of this great event or sign up to help
@@ -27,8 +31,8 @@
 
       <br>
 
-      <app-post title="Guatemala Fundraiser - Parents Night Out"
-                buttonText="Sign Up"
+      <app-post class="spacer" title="Guatemala Fundraiser - Parents Night Out"
+                buttonText="Sign&nbsp;Up"
                 internalLink="/out-of-domain">
         Bridge Kids volunteers are headed to Guatemala this November. As a fundraiser, the team invites all kids,
         ages 4-12 to a Pajama Party and Movie night, Friday, October 4 from 6-9pm at Bridge. Suggested donation is $10
@@ -39,7 +43,7 @@
       <br>
 
       <app-post title="Parking Attendant Volunteers Needed"
-                buttonText="Sign Up"
+                buttonText="Sign&nbsp;Up"
                 internalLink="/out-of-domain">
         Bridge is growing and that means we need your help! If you are interested in joining our parking team.
         Indicate which service you would like to serve. Sign up today.
@@ -47,23 +51,27 @@
     </div>
   </div>
 
+  <br><br>
+
   <div class="announcement-group"
        [class.announcement-group-desk-reverse]="!isMobile"
        [class.announcement-group-mobile]="isMobile"
   >
     <div class="announcement-title">
-      <h1>Opportunities</h1>
-      <h3>To Connect & Grow</h3>
+      <h1 class="title-h1">Opportunities</h1>
+      <h3 class="title-h3">To Connect & Grow</h3>
       <p>Click on any of the buttons to the right <br> for more details and to sign up.</p>
     </div>
     <div class="announcement-posts">
-      <app-post title="Men's Golf Connect Group Event" buttonText="Sign Up" internalLink="/college-ministry">
+      <app-post title="Men's Golf Connect Group Event" buttonText="Sign&nbsp;Up" internalLink="/college-ministry">
         Bridge Golf Connect Group will be hosting an afternoon of golf at Stoney Creek Golf course in Nellysford, VA on
         Sunday October 6th at 2pm. Cost will be $49.00. Please sign up if you are interested in playing.
       </app-post>
 
+      <br>
+
       <app-post title="Outreach: Gypsy Hill Park Scarecrow &quot;Build Off&quot;"
-                buttonText="More Info"
+                buttonText="More&nbsp;Info"
                 internalLink="/out-of-domain">
         Are you creative and crafty? Join others from Bridge for a fun Outreach opportunity. Individuals/families can
         meet at Gypsy Hill Park on Saturday, October 5th from 9am to noon for a Scarecrow "Build Off." The scarecrow(s)

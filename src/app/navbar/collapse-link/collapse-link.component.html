@@ -1,4 +1,4 @@
-<a (click)="collapsed = !collapsed" href="#">Random Link</a>
+<a (click)="collapsed = !collapsed" class="nav-link">+ {{title}}</a>
 <div [ngbCollapse]="collapsed">
-  <a href="#" [ngbCollapse]="collapsed"></a>
+  <ng-content></ng-content>
 </div>

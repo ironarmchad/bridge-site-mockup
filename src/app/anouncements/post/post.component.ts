@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {ResponsiveService} from "../../_services/responsive.service";
 
 @Component({
   selector: 'app-post',
@@ -10,10 +11,11 @@ export class PostComponent implements OnInit {
   @Input() internalLink: string;
   @Input() externalLink: string;
   @Input() buttonText: string;
+  isMobile: boolean;
 
-  constructor() { }
+  constructor(private respServ: ResponsiveService) { }
 
   ngOnInit() {
+    this.isMobile = this.respServ.currentMobileValue;
   }
-
 }
