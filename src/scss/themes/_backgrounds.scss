@@ -1,0 +1,44 @@
+.background-darkgrey {
+  background-color: #3d3d3d;
+  color: white;
+}
+
+.background-darkgrey > a {
+  color: white;
+  text-decoration: underline;
+}
+
+.background-darkgrey > a:hover {
+  color: royalblue;
+  text-decoration: none;
+}
+
+.background-lightgrey {
+  background-color: #b7bbbc;
+  color: black;
+}
+
+.background-lightgrey > a {
+  color: black;
+  text-decoration: underline;
+}
+
+.background-lightgrey > a:hover {
+  color: royalblue;
+  text-decoration: none;
+}
+
+.background-tomato {
+  background-color: tomato;
+  color: white;
+}
+
+.background-tomato > a {
+  color: white;
+  text-decoration: underline;
+}
+
+.background-tomato > a:hover {
+  color: royalblue;
+  text-decoration: none;
+}

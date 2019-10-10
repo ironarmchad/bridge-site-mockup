@@ -9,9 +9,11 @@ import {VideoComponent} from './video/video.component';
 import {GodStoriesComponent} from './god-stories/god-stories.component';
 import {CalendarComponent} from './calendar/calendar.component';
 import {OutOfDomainComponent} from './out-of-domain/out-of-domain.component';
+import {HowToConnectQuicklyComponent} from './how-to-connect-quickly/how-to-connect-quickly.component';
 
 
 const routes: Routes = [
+  {path: 'how-to-connect-quickly', component: HowToConnectQuicklyComponent},
   {path: 'calender', component: CalendarComponent},
   {path: 'god-stories', component: GodStoriesComponent},
   {path: 'video', component: VideoComponent},

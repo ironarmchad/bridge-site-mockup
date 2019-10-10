@@ -1,89 +1,72 @@
-<div class="imnew-container">
-  <div class="banner" *ngIf="!isMobile">&nbsp;</div>
-  <div class="video-container">
-    <div class="title-text">
-      <h2>I'M NEW, WHAT SHOULD I KNOW?</h2>
-      <i class="material-icons" style="font-size: 60px;">remove</i>
-      <p class="text-justify">
-        Welcome to Bridge Christian Church. We’re glad you are here! We are a diverse group of people made up of
-        families and individuals of all ages, from many different church backgrounds who are trying to live in
-        Christian community. Whether you’ve attended church all your life or you’ve never been in church, we invite you
-        to experience the difference here.
-      </p>
-    </div>
-
-    <video class="start-video" controls #startVideo>
-      <source src="https://video.wixstatic.com/video/cbd73b_15905beab63f49a38d77f76c9dde8d0a/1080p/mp4/file.mp4"
-              type="video/mp4">
-      Something went wrong
-    </video>
+<div class="video-container">
+  <div class="title-text background-tomato">
+    <h2>I'M NEW, WHAT SHOULD I KNOW?</h2>
+    <i class="material-icons" style="font-size: 60px;">remove</i>
+    <p class="text-justify">
+      Welcome to Bridge Christian Church. We’re glad you are here! We are a diverse group of people made up of
+      families and individuals of all ages, from many different church backgrounds who are trying to live in
+      Christian community. Whether you’ve attended church all your life or you’ve never been in church, we invite you
+      to experience the difference here.
+    </p>
   </div>
 
-  <div class="info-container">
-    <div class="info-box"
-         style="background-color: #324158; color: white"
-    >
-      <fa-icon [icon]="['fas', 'car']" size="3x"></fa-icon>
-      <br><br>
-      <h3>Parking</h3>
-      <br>
-      <p class="text-justify">
-        At Bridge you will find special parking reserved for first time guests. Simply turn on your hazard lights as you
-        turn into the parking lot, so that the parking attendants will recognize you as a first time guest. Follow the
-        signs to designated parking.
-      </p>
-    </div>
+  <video class="start-video" controls #startVideo>
+    <source src="https://video.wixstatic.com/video/cbd73b_15905beab63f49a38d77f76c9dde8d0a/1080p/mp4/file.mp4"
+            type="video/mp4">
+    Something went wrong
+  </video>
+</div>
 
-    <div class="info-box"
-         style="background-color: #b7bbbc; color:black;"
-    >
-      <fa-icon [icon]="['fas', 'bullhorn']" size="3x"></fa-icon>
-      <br><br>
-      <h3>Worship Services</h3>
-      <br>
-      <ul class="text-left">
-        <li>4 Identical Services - 8:15, 9:45 & 11:15am on Sunday's and 6:30pm on Thursday's</li>
-        <li>Contemporary, energetic worship led by our Creative Arts Pastor and praise band</li>
-        <li>Messages relevant to your daily life</li>
-        <li>Weekly Communion—following the sermon</li>
-        <li>Casual and comfortable attire​</li>
-        <li>Hosts at the Guest Services area to assist you with questions and show you around our facility</li>
-        <li>Complimentary coffee available in the foyer</li>
-        <li>Nursery and children's classes (age 2-5th grade) taught by screened and trained volunteers during each
-          service
-        </li>
-        <li>Middle School class offered during the 9:45 service</li>
-        <li>A special gift for you in Meeting Room A</li>
-      </ul>
-    </div>
+<div class="info-panel">
+  <div class="info-box background-darkgrey">
+    <fa-icon [icon]="['fas', 'car']" size="3x"></fa-icon>
+    <h3>Parking</h3>
+    <p>
+      At Bridge you will find special parking reserved for first time guests. Simply turn on your hazard lights as you
+      turn into the parking lot, so that the parking attendants will recognize you as a first time guest. Follow the
+      signs to designated parking.
+    </p>
+  </div>
 
-    <div class="info-box"
-         style="background-color: tomato; color: white"
-    >
-      <fa-icon [icon]="['fas', 'pencil-alt']" size="3x"></fa-icon>
-      <br><br>
-      <a routerLink="/how-to-connect-quickly" style="color: white"><h3>Connect Quickly</h3></a>
-      <br>
-      <div class="text-left">
-        <p>
-          We also offer you several avenues to help you connect quickly and feel at home here.
-        </p>
+  <div class="info-box background-lightgrey">
+    <fa-icon [icon]="['fas', 'bullhorn']" size="3x"></fa-icon>
+    <h3>Worship Services</h3>
+    <ul>
+      <li>4 Identical Services - 8:15, 9:45 & 11:15am on Sunday's and 6:30pm on Thursday's</li>
+      <li>Contemporary, energetic worship led by our Creative Arts Pastor and praise band</li>
+      <li>Messages relevant to your daily life</li>
+      <li>Weekly Communion—following the sermon</li>
+      <li>Casual and comfortable attire​</li>
+      <li>Hosts at the Guest Services area to assist you with questions and show you around our facility</li>
+      <li>Complimentary coffee available in the foyer</li>
+      <li>Nursery and children's classes (age 2-5th grade) taught by screened and trained volunteers during each
+        service
+      </li>
+      <li>Middle School class offered during the 9:45 service</li>
+      <li>A special gift for you in Meeting Room A</li>
+    </ul>
+  </div>
 
-        <h5>Starting Point</h5>
-        <p>
-          Starting Point is a relaxed two-week study.
-        </p>
+  <div class="info-box background-tomato">
+    <fa-icon [icon]="['fas', 'pencil-alt']" size="3x"></fa-icon>
+    <a routerLink="/how-to-connect-quickly" style="color: white"><h3>Connect Quickly</h3></a>
+    <p>
+      We also offer you several avenues to help you connect quickly and feel at home here.
+    </p>
 
-        <h5>Connect Groups</h5>
-        <p>
-          Connect Groups are based on interests and hobbies.
-        </p>
+    <h5>Starting Point</h5>
+    <p>
+      Starting Point is a relaxed two-week study.
+    </p>
 
-        <h5>Life Groups</h5>
-        <p>
-          Life Groups help you build relationships in a smaller setting.
-        </p>
-      </div>
-    </div>
+    <h5>Connect Groups</h5>
+    <p>
+      Connect Groups are based on interests and hobbies.
+    </p>
+
+    <h5>Life Groups</h5>
+    <p>
+      Life Groups help you build relationships in a smaller setting.
+    </p>
   </div>
 </div>

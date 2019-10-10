@@ -9,6 +9,19 @@
   color: black;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 h1, h2, h3 {
   text-transform: uppercase;
 }
+

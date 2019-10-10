@@ -18,6 +18,7 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CollapseLinkComponent } from './navbar/collapse-link/collapse-link.component';
+import { HowToConnectQuicklyComponent } from './how-to-connect-quickly/how-to-connect-quickly.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { CollapseLinkComponent } from './navbar/collapse-link/collapse-link.comp
     NavbarComponent,
     FooterComponent,
     CollapseLinkComponent,
+    HowToConnectQuicklyComponent,
   ],
   imports: [
     BrowserModule,

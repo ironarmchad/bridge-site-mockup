@@ -1,0 +1,47 @@
+.info-panel {
+  border-style: solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  width: calc(100% + 10px);
+}
+
+.info-box {
+  color: white;
+  text-align: center;
+  margin: 0 5px;
+  padding: 40px;
+  flex: 1 1 0;
+}
+
+.info-box > p {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 400px;
+}
+
+.info-box > a {
+  color: white;
+  text-decoration: underline;
+}
+
+.info-box > a:hover {
+  color: royalblue;
+  text-decoration: none;
+}
+
+.info-box > ul {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+}
+
+@media screen and (max-width: 1000px) {
+  .info-panel {
+    flex-direction: column;
+  }
+}

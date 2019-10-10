@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, Directive, ElementRef, HostListener, OnInit, ViewChild} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {faBullhorn, faCar, faPencilAlt} from '@fortawesome/free-solid-svg-icons';
 import {FaIconLibrary} from '@fortawesome/angular-fontawesome';
 import {ResponsiveService} from '../_services/responsive.service';
@@ -19,6 +19,8 @@ export class ImnewComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    document.body.style.backgroundImage = 'url(\'https://static.wixstatic.com/media/cbd73b_49f940374e7c46f9ba79ca7194171038~mv2.jpg/v1/fill/w_641,h_350,al_c,q_85/cbd73b_49f940374e7c46f9ba79ca7194171038~mv2.webp\')';
+
     this.isMobile = this.respServ.currentMobileValue;
   }
 }
