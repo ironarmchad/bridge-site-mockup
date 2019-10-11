@@ -19,6 +19,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CollapseLinkComponent } from './navbar/collapse-link/collapse-link.component';
 import { HowToConnectQuicklyComponent } from './how-to-connect-quickly/how-to-connect-quickly.component';
+import { ConnectGroupsComponent } from './connect-groups/connect-groups.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { HowToConnectQuicklyComponent } from './how-to-connect-quickly/how-to-co
     FooterComponent,
     CollapseLinkComponent,
     HowToConnectQuicklyComponent,
+    ConnectGroupsComponent,
   ],
   imports: [
     BrowserModule,

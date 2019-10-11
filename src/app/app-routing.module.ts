@@ -10,9 +10,11 @@ import {GodStoriesComponent} from './god-stories/god-stories.component';
 import {CalendarComponent} from './calendar/calendar.component';
 import {OutOfDomainComponent} from './out-of-domain/out-of-domain.component';
 import {HowToConnectQuicklyComponent} from './how-to-connect-quickly/how-to-connect-quickly.component';
+import {ConnectGroupsComponent} from './connect-groups/connect-groups.component';
 
 
 const routes: Routes = [
+  {path: 'connect-groups', component: ConnectGroupsComponent},
   {path: 'how-to-connect-quickly', component: HowToConnectQuicklyComponent},
   {path: 'calender', component: CalendarComponent},
   {path: 'god-stories', component: GodStoriesComponent},

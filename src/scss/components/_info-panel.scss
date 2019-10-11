@@ -1,47 +1,59 @@
 .info-panel {
-  border-style: solid;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
-  width: calc(100% + 10px);
+  width: 100%;
+
+  .info-box {
+    text-align: center;
+    padding: 40px;
+    flex: 1 1 0;
+
+    h3:first-child {
+      margin: 20px 0;
+    }
+
+    p {
+      text-align: justify;
+      text-justify: inter-word;
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 400px;
+    }
+
+    ul {
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 400px;
+    }
+  }
 }
 
-.info-box {
-  color: white;
-  text-align: center;
-  margin: 0 5px;
-  padding: 40px;
-  flex: 1 1 0;
-}
-
-.info-box > p {
-  text-align: justify;
-  text-justify: inter-word;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 400px;
-}
-
-.info-box > a {
-  color: white;
-  text-decoration: underline;
-}
-
-.info-box > a:hover {
-  color: royalblue;
-  text-decoration: none;
-}
-
-.info-box > ul {
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 400px;
-}
-
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .info-panel {
     flex-direction: column;
+
+    .info-box {
+      margin-top: 10px;
+    }
+
+    .info-box:first-child {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+@media (min-width: 999px) {
+  .info-panel {
+    flex-direction: row;
+
+    .info-box {
+      margin-left: 10px;
+    }
+
+    .info-box:first-child {
+      margin-left: 0 !important;
+    }
   }
 }
