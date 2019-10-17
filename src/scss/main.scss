@@ -1,15 +1,22 @@
 /* This file is for importing global styles into the project in the correct order */
 
+/* Priority Loads (eg. tools)*/
+@import "~modularscale-sass/stylesheets/modularscale";
+
 /* Abstracts */
 @import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
 
 /* Vendors */
 @import "vendors/bootstrap";
 
 /* base */
-@import "base/base";
+@import "base/typography";
 
 /* Layouts */
+@import "layout/base-page";
 
 /* Components */
 @import "components/navbarlike-light";

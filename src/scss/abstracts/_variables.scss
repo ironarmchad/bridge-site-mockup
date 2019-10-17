@@ -1,3 +1,74 @@
-$theme-colors: (
-  "primary": #e06543
+// typography settings
+$breakpoint-large-screen: 45rem;
+
+$modularscale: (
+  fluid: false,
+  base: 1em,
+  20em: (
+    ratio: 1.2
+  ),
+  30em: (
+    ratio: 1.333
+  ),
+  40em: (
+    ratio: 1.5
+  )
 );
+
+// colors
+
+// Color of Bridge logo
+$color-tomato: #e06444;
+
+/*
+ * Colors calculated from https://www.sessions.edu/color-calculator/
+ */
+
+$color-turquoise: #44e0c3;
+$color-complementary: $color-turquoise;
+
+$color-indianorange: #c77864;
+$color-monochromatic: $color-indianorange;
+
+$color-peru: #e08a44;
+$color-indianpink: #e04451;
+$color-analogous-orange: $color-peru;
+$color-analogous-pink: $color-indianpink;
+
+$color-royalblue: #4460e0;
+$color-limegreen: #51e044;
+$color-splitcomp-blue: $color-royalblue;
+$color-splitcomp-green: $color-limegreen;
+
+$color-blueviolet: #8544e0;
+$color-yellowgreen: #9fe044;
+$color-triad-purple: $color-blueviolet;
+$color-triad-green: $color-yellowgreen;
+
+$color-sandybrown: #e0b144;
+$color-tetra-blue: $color-turquoise;
+$color-tetra-purple: $color-blueviolet;
+$color-tetra-brown: $color-sandybrown;
+
+// scheming colors generated at https://mycolor.space/?hex=%23E06444&sub=1
+
+// Squash palette
+$color-darkcyan: #00a786;
+$color-mediumorchid: #bb63e9;
+
+// Friend palette
+$color-darkred: #8c1904;
+$color-teal: #006789;
+$color-cornflowerblue: #65b5db;
+
+
+// Bootstrap color overides
+$primary: $color-tomato;
+$secondary: $color-teal;
+$danger: $color-darkred;
+$info: $color-cornflowerblue;
+
+// Body
+
+// Links
+

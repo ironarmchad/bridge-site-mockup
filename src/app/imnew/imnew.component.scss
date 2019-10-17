@@ -8,38 +8,23 @@
   margin-bottom: 40px;
 }
 
-.banner {
-  position: absolute;
-  top: 40px;
-  height: 300px;
-  width: 100%;
-  background-color: tomato;
-  z-index: -1;
-}
-
 .title-text {
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 40px;
-  margin: 20px 0;
+  padding: 2em;
+  margin: 2em 0;
 }
 
+.start-video {
+  width: 95vw;
+}
 
-@media screen and (min-width: 999px) {
-  .title-text {
-    width: 30vw;
-  }
-
+@media screen and (min-width: 88em) {
   .start-video {
     width: 50vw;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .start-video {
-    width: 95vw;
   }
 }
 

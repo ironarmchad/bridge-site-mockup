@@ -1,45 +1,37 @@
-.background-darkgrey {
-  background-color: #3d3d3d;
-  color: white;
+.background-white {
+  background-color: $white;
+  color: $gray-900;
+}
 
-  a {
-    color: white;
-    text-decoration: underline;
-  }
+.bg-primary {
+  background-color: $primary;
+  color: $white;
 
-  a:hover {
-    color: royalblue;
-    text-decoration: none;
+  p, ul {
+    color: $black;
   }
 }
 
-.background-lightgrey {
-  background-color: #b7bbbc;
-  color: black;
-
-  a {
-    color: black;
-    text-decoration: underline;
-  }
-
-  a:hover {
-    color: royalblue;
-    text-decoration: none;
-  }
+.bg-secondary {
+  background-color: $secondary;
+  color: $white;
 }
 
+.bg-info {
+  background-color: $info;
+  color: $white;
+}
 
-.background-tomato {
-  background-color: tomato;
-  color: white;
+.bg-darkred  {
+  background-color: $color-darkred;
+  color: $white;
+}
 
-  a {
-    color: white;
-    text-decoration: underline;
-  }
+.bg-teal {
+  background-color: $color-teal;
+  color: $white;
+}
 
-  a:hover {
-    color: royalblue;
-    text-decoration: none;
-  }
+.bg-cornflowerblue {
+  background-color: $color-cornflowerblue;
 }

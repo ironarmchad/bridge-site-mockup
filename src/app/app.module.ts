@@ -20,6 +20,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CollapseLinkComponent } from './navbar/collapse-link/collapse-link.component';
 import { HowToConnectQuicklyComponent } from './how-to-connect-quickly/how-to-connect-quickly.component';
 import { ConnectGroupsComponent } from './connect-groups/connect-groups.component';
+import { ConnectGroupBlockComponent } from './connect-groups/connect-group-block/connect-group-block.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { ConnectGroupsComponent } from './connect-groups/connect-groups.componen
     CollapseLinkComponent,
     HowToConnectQuicklyComponent,
     ConnectGroupsComponent,
+    ConnectGroupBlockComponent,
   ],
   imports: [
     BrowserModule,

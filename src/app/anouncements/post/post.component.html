@@ -1,18 +1,16 @@
 <div class="post-container">
-  <div>
-    <h5>{{title}}</h5>
-    <div class="post-text">
+  <div class="post-title-content">
+    <h5 class="title legible-width">{{title}}</h5>
+    <div class="post-text legible-block-text">
       <ng-content></ng-content>
     </div>
   </div>
   <div class="link-container">
     <a *ngIf="internalLink"
        class="btn btn-primary"
-       [class.btn-sm]="isMobile"
        routerLink="internalLink">{{buttonText}}</a>
     <a *ngIf="externalLink && !(internalLink)"
        class="btn btn-primary"
-       [class.btn-sm]="isMobile"
        href="{{externalLink}}">{{buttonText}}</a>
   </div>
 </div>

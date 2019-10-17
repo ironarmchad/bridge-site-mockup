@@ -1,0 +1,33 @@
+.content {
+  max-width: 500px;
+  width: 80vw;
+  font-size: smaller;
+  padding: 5px;
+  display: grid;
+  align-items: center;
+  grid-template-column: 1fr 2fr;
+  grid-template-areas:
+    "image title"
+    "image content"
+    "linkButton content";
+}
+
+.title {
+  grid-area: title;
+}
+
+.img-content {
+  max-width: 160px;
+  width: 30vw;
+  border-radius: 50%;
+  grid-area: image;
+}
+
+.text-content {
+  padding: 0 10px;
+  grid-area: content;
+}
+
+.link-button {
+  grid-area: linkButton;
+}

@@ -1,0 +1,15 @@
+@mixin readable-width {
+  width: 18rem;
+  @media screen and (min-width: 45rem) {
+    width: 36rem;
+  }
+}
+
+@mixin readable-block {
+  @include readable-width;
+  text-align: left;
+  @media screen and (min-width: 45rem) {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}

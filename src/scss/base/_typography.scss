@@ -1,0 +1,36 @@
+/* For adding basic formatting structures loaded late to overwrite defaults */
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined');
+@import url('https://fonts.googleapis.com/css?family=Griffy&display=swap');
+
+html {
+  font-size: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  @include ms-respond(font-size, 4);
+}
+
+h2 {
+  @include ms-respond(font-size, 3);
+}
+
+h3 {
+  @include ms-respond(font-size, 2);
+}
+
+h4 {
+  @include ms-respond(font-size, 1);
+}
+
+.legible-width {
+  @include readable-width;
+}
+
+.legible-block-text {
+  @include readable-block;
+}

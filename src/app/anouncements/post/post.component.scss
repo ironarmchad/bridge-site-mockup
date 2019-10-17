@@ -1,12 +1,23 @@
 .post-container {
   display: flex;
-  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
+.post-title-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+}
+
+$post-margin: 1em;
 .post-text {
-  padding-right: 20px;
-  text-align: justify;
-  text-justify: inter-word;
+  margin: 0 $post-margin $post-margin;
 }
 
 .link-container {
