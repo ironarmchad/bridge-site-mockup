@@ -21,6 +21,7 @@ import { CollapseLinkComponent } from './navbar/collapse-link/collapse-link.comp
 import { HowToConnectQuicklyComponent } from './how-to-connect-quickly/how-to-connect-quickly.component';
 import { ConnectGroupsComponent } from './connect-groups/connect-groups.component';
 import { ConnectGroupBlockComponent } from './connect-groups/connect-group-block/connect-group-block.component';
+import { BlankComponent } from './blank/blank.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { ConnectGroupBlockComponent } from './connect-groups/connect-group-block
     HowToConnectQuicklyComponent,
     ConnectGroupsComponent,
     ConnectGroupBlockComponent,
+    BlankComponent,
   ],
   imports: [
     BrowserModule,

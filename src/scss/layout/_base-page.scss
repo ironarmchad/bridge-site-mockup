@@ -4,9 +4,7 @@ html {
 }
 
 body {
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: #fceec5;
+  // downloaded from https://www.transparenttextures.com/black-felt.html
+  background-image: url('src/assets/img/black-felt.png');
 }

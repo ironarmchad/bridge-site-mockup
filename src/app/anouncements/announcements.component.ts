@@ -12,7 +12,8 @@ export class AnnouncementsComponent implements OnInit {
   constructor(private respServ: ResponsiveService) { }
 
   ngOnInit() {
-    document.body.style.backgroundImage = "url('https://static.wixstatic.com/media/980a156ff63d4ed993ae99f908fc418f.jpg/v1/fill/w_1920,h_1440,al_c,q_85,usm_0.66_1.00_0.01/980a156ff63d4ed993ae99f908fc418f.webp')";
+    //document.body.style.backgroundImage = "url('https://static.wixstatic.com/media/980a156ff63d4ed993ae99f908fc418f.jpg/v1/fill/w_1920,h_1440,al_c,q_85,usm_0.66_1.00_0.01/980a156ff63d4ed993ae99f908fc418f.webp')";
+    document.body.style.backgroundImage = null;
     this.isMobile = this.respServ.currentMobileValue;
   }
 
