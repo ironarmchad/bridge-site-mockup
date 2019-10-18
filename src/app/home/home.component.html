@@ -1,22 +1,26 @@
-<div class="ad-banner">
-  <h2 class="spooky" *ngIf="isMobile">A Halloween Alternative</h2>
-  <div class="img-box">
-    <div class="item-text text-right" *ngIf="!isMobile">
-      <h2 class="spooky">A<br>Halloween<br>Alternative</h2>
+<h2>Come and Join Us in Christian Fellowship</h2>
+
+<ngb-carousel>
+  <ng-template ngbSlide>
+    <app-services></app-services>
+    <div class="carousel-caption">
+      <h3>Services</h3>
     </div>
-    <div class="item-center">
-      <img
-        [class.item-img-mobile]="isMobile"
-        [class.item-img-desktop]="!isMobile"
-        src="https://static.wixstatic.com/media/cbd73b_6b9b8d38ac364eb7b4904d7b9390a255~mv2_d_8000_4500_s_4_2.png/v1/fill/w_743,h_415,al_c,q_80,usm_0.66_1.00_0.01/Trunk%20or%20Treat%202019.webp"
-      >
+  </ng-template>
+  <ng-template ngbSlide>
+    <app-halloween></app-halloween>
+    <div class="carousel-caption">
+      <h3>Halloween</h3>
     </div>
-    <div class="item-text text-left" *ngIf="!isMobile">
-      <h1 class="spooky">Sunday<br>October 27 <br>4-6PM</h1>
+  </ng-template>
+  <ng-template ngbSlide>
+    <app-coffee></app-coffee>
+    <div class="carousel-caption">
+      <h3>Coffee</h3>
     </div>
-  </div>
-  <div class="text-center">
-    <h4 class="spooky" *ngIf="isMobile">Sunday October 27 4-6PM</h4>
-    <h4 class="spooky">individually wrapped candy donations needed; drop off at designated points in foyer</h4>
-  </div>
-</div>
+  </ng-template>
+</ngb-carousel>
+
+
+<!--
+--->

@@ -1,0 +1,36 @@
+.ad-banner {
+  text-align: center;
+  background-color: #022b3d;
+  padding: 20px;
+}
+
+.img-box {
+  display: flex;
+  justify-content: center;
+}
+
+.item-img-desktop {
+  width: 600px;
+}
+
+.item-img-mobile {
+  width: 300px;
+}
+
+
+.item-text {
+  z-index: +2;
+}
+
+.text-right {
+  margin-right: -60px;
+}
+
+.text-left {
+  margin-left: -60px;
+}
+
+.spooky {
+  color: tomato;
+  font-family: 'Griffy', 'cursive';
+}
