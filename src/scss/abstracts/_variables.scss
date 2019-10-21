@@ -18,7 +18,9 @@ $modularscale: (
 // colors
 
 // Color of Bridge logo
-$color-tomato: #e06444;
+$color-bridgelogo: #e06444;
+$color-darkbridgelogo: #d45c3b;
+$color-lightbridgelogo: #ff6f47;
 
 /*
  * Colors calculated from https://www.sessions.edu/color-calculator/
@@ -40,17 +42,26 @@ $color-gold: #fcc340;
 $color-lightcyan: #49f2d8;
 $color-denim: #5e95cb;
 
-// scheming colors generated at https://mycolor.space/?hex=%23E06444&sub=1
+// Text colors
+$text-color-light: white;
+$text-color-dark: black;
 
-// Squash palette
+// Bootstrap-like color definitions
+// support colors should alternate with odd colors being dark and even colors being light
+$support1: $color-lightgreen;
+$support2: $color-gold;
+$support3: $color-mediumturquoise;
 
-// Friend palette
 
-// Bootstrap color overides
-$primary: $color-tomato;
+// Bootstrap Overrides
+
+// Theme colors
+$primary: $color-darkbridgelogo;
+$secondary: $color-indianpurple;
+$info: $color-slatepurple;
 
 // Body
-$body-bg: #ffffee;
+$body-bg: #ffefd7;
 
-// Links
-
+// Link
+$link-color: $info;

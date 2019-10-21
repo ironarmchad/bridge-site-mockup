@@ -22,6 +22,7 @@ import { HowToConnectQuicklyComponent } from './how-to-connect-quickly/how-to-co
 import { ConnectGroupsComponent } from './connect-groups/connect-groups.component';
 import { ConnectGroupBlockComponent } from './connect-groups/connect-group-block/connect-group-block.component';
 import { BlankComponent } from './blank/blank.component';
+import { PicCardComponent } from './staff-elders/pic-card/pic-card.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { BlankComponent } from './blank/blank.component';
     ConnectGroupsComponent,
     ConnectGroupBlockComponent,
     BlankComponent,
+    PicCardComponent,
   ],
   imports: [
     BrowserModule,

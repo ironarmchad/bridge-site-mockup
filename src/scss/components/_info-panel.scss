@@ -10,7 +10,7 @@
     flex: 1 1 0;
 
     h3:first-child {
-      margin: 1em 0;
+      padding: 1em 0;
     }
 
     p {
@@ -31,8 +31,22 @@
   }
 }
 
+@media screen and (min-width: 45em) {
+  .info-panel-2 {
+    flex-direction: row;
+    .info-box {
+      padding: 2em;
+      margin: 0 0 0 1em;
+    }
+
+    .info-box:first-child {
+      margin: 0;
+    }
+  }
+}
+
 @media screen and (min-width: 68em) {
-  .info-panel {
+  .info-panel-3 {
     flex-direction: row;
 
     .info-box {

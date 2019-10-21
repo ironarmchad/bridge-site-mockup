@@ -1,3 +1,5 @@
+
+// Fixing Line Widths
 @mixin readable-width {
   width: 18rem;
   @media screen and (min-width: 45rem) {
@@ -11,5 +13,17 @@
   @media screen and (min-width: 45rem) {
     text-align: justify;
     text-justify: inter-word;
+  }
+}
+
+// Setting text light
+@mixin text-light {
+  color: $text-color-light;
+  a {
+    color: $text-color-light;
+  }
+
+  a: hover {
+    color: darken($text-color-light, 15%);
   }
 }

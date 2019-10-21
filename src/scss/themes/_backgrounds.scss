@@ -1,63 +1,15 @@
-.background-white {
+.bg-white {
   background-color: $white;
-  color: $gray-900;
 }
 
-.bg-primary {
-  background-color: $primary;
-  color: $white;
-
-  p, ul {
-    color: $black;
-  }
+.bg-support1 {
+  background-color: $support1;
 }
 
-.bg-secondary {
-  background-color: $secondary;
-  color: $white;
+.bg-support2 {
+  background-color: $support2;
 }
 
-.bg-info {
-  background-color: $info;
-  color: $white;
+.bg-support3 {
+  background-color: $support3;
 }
-
-.bg-indianpurple {
-  background-color: $color-indianpurple;
-  color: $white;
-}
-
-.bg-darkorchid {
-  background-color: $color-darkorchid;
-  color: $gray-100;
-}
-
-.bg-gold {
-  background-color: $color-gold;
-  color: $gray-900;
-}
-
-.bg-lightcyan {
-  background-color: $color-lightcyan;
-  color: $gray-900;
-}
-
-.bg-denim {
-  background-color: $color-denim;
-  color: $gray-100;
-}
-/*
-.bg-darkred  {
-  background-color: $color-darkred;
-  color: $white;
-}
-
-.bg-teal {
-  background-color: $color-teal;
-  color: $white;
-}
-
-.bg-cornflowerblue {
-  background-color: $color-cornflowerblue;
-}
-*/
