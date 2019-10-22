@@ -19,10 +19,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CollapseLinkComponent } from './navbar/collapse-link/collapse-link.component';
 import { HowToConnectQuicklyComponent } from './how-to-connect-quickly/how-to-connect-quickly.component';
-import { ConnectGroupsComponent } from './connect-groups/connect-groups.component';
-import { ConnectGroupBlockComponent } from './connect-groups/connect-group-block/connect-group-block.component';
 import { BlankComponent } from './blank/blank.component';
 import { PicCardComponent } from './staff-elders/pic-card/pic-card.component';
+import { NeedPrayerComponent } from './need-prayer/need-prayer.component';
+import { TellUsYourStoryComponent } from './tell-us-your-story/tell-us-your-story.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -41,14 +42,15 @@ import { PicCardComponent } from './staff-elders/pic-card/pic-card.component';
     FooterComponent,
     CollapseLinkComponent,
     HowToConnectQuicklyComponent,
-    ConnectGroupsComponent,
-    ConnectGroupBlockComponent,
     BlankComponent,
     PicCardComponent,
+    NeedPrayerComponent,
+    TellUsYourStoryComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     NgbDropdownModule,
     FontAwesomeModule,
     NgbCollapseModule

@@ -18,4 +18,10 @@ export class NavbarComponent implements OnInit {
     this.isMobile = this.respServ.currentMobileValue;
   }
 
+  openMenu() {
+    // close all other menus
+
+    // open a list of links under list of links
+  }
+
 }

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ConnectGroupBlockComponent } from './connect-group-block.component';
+import { CollegeComponent } from './college.component';
 
-describe('ConnectGroupBlockComponent', () => {
-  let component: ConnectGroupBlockComponent;
-  let fixture: ComponentFixture<ConnectGroupBlockComponent>;
+describe('CollegeComponent', () => {
+  let component: CollegeComponent;
+  let fixture: ComponentFixture<CollegeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ConnectGroupBlockComponent ]
+      declarations: [ CollegeComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ConnectGroupBlockComponent);
+    fixture = TestBed.createComponent(CollegeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
