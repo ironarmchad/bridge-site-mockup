@@ -41,16 +41,20 @@ $color-darkorchid: #7d3b79;
 $color-gold: #fcc340;
 $color-lightcyan: #49f2d8;
 $color-denim: #5e95cb;
+$color-boldpink: #f06cc6;
+$color-greenkhaki: #d1e37a;
 
 // Text colors
 $text-color-light: white;
 $text-color-dark: black;
 
 // Bootstrap-like color definitions
-// support colors should alternate with odd colors being dark and even colors being light
+// support colors that should all contrast with the standard body color
 $support1: $color-lightgreen;
 $support2: $color-gold;
 $support3: $color-mediumturquoise;
+$support4: $color-greenkhaki;
+$support5: $color-boldpink;
 
 
 // Bootstrap Overrides
