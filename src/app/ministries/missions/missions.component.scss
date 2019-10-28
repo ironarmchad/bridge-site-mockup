@@ -1,0 +1,41 @@
+.container-missions {
+  .info-panel {
+    margin: 2em 0;
+  }
+}
+
+.banner {
+  margin: 2em 0;
+  padding-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.ihclogo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 15em;
+    margin: 1em;
+  }
+}
+
+.title {
+  padding: 1em;
+}
+
+.mission-links {
+  align-items: center;
+  img {
+    height: 6em;
+    margin: 1em;
+  }
+
+}

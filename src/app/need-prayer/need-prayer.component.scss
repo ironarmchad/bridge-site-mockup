@@ -1,0 +1,23 @@
+.container-need-prayer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-need-prayer {
+  max-width: 40em;
+  padding: 2em;
+  background-color: rgba(white, 0.8);
+  box-shadow: 2px 2px 2px rgba(black, .4);
+  border-radius: 2%;
+}
+
+h3 {
+  padding-bottom: 0.5em;
+}
+
+.invalid {
+  padding: 0.2em;
+  border: 1px solid red;
+  box-shadow: 2px 2px 2px rgba(red, 0.6);
+}

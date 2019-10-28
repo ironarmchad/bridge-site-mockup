@@ -1,0 +1,94 @@
+<div class="container-story">
+  <form class="form-story" #storyForm="ngForm" (ngSubmit)="onSubmit()">
+    <h3>Tell Us Your Story</h3>
+
+    <p>How has Jesus changed your life? Tell your story and celebrate all that God has done.</p>
+
+    <p>
+      Consent of Release: By submitting the form below you are releasing your testimony to be potentially shared
+      online, from the stage and additional online channels.
+    </p>
+
+    <p><em>
+      Psalm 105: 1-2 says, "Give praise to the Lord, proclaim His name; make known among the nations what He has done.
+      Sing to Him, sing praise to Him; tell of all His wonderful acts."
+    </em></p>
+
+    <div class="form-group">
+      <label>Your Name</label>
+      <div class="form-row">
+        <div class="col-sm">
+          <input
+            id="firstName"
+            name="firstName"
+            #firstName='ngModel'
+            type="text"
+            class="form-control"
+            placeholder="First"
+            required
+            [(ngModel)]="email.firstname"
+          >
+          <div
+            [hidden]="firstName.valid || !firstName.touched"
+            class="alert alert-danger"
+          >First name is required.</div>
+        </div>
+
+        <div class="col-sm">
+          <input
+            id="lastName"
+            name="lastName"
+            #lastName='ngModel'
+            type="text"
+            class="form-control"
+            placeholder="Last"
+            required
+            [(ngModel)]="email.lastname"
+          >
+          <div
+            [hidden]="lastName.valid || !lastName.touched"
+            class="alert alert-danger"
+          >Last name is required.</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Your Email</label>
+        <input
+          id="address"
+          name="address"
+          #address='ngModel'
+          type="email"
+          class="form-control"
+          required
+          [(ngModel)]="email.address"
+        >
+        <div
+          [hidden]="address.valid || !address.touched"
+          class="alert alert-danger"
+        >Email is required</div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Share your story.</label>
+        <textarea
+          id="message"
+          name="message"
+          #message='ngModel'
+          [(ngModel)]="email.message"
+          class="form-control"
+          type="text"
+          required
+        ></textarea>
+        <div
+          [hidden]="message.valid || !message.touched"
+          class="alert alert-danger"
+        >Please tell us your story.</div>
+      </div>
+    </div>
+
+    <div class="text-right">
+      <button type="submit" [disabled]="!storyForm.form.valid" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div>

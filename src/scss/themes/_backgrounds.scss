@@ -1,37 +1,23 @@
-.background-white {
+.bg-white {
   background-color: $white;
-  color: $gray-900;
 }
 
-.bg-primary {
-  background-color: $primary;
-  color: $white;
-
-  p, ul {
-    color: $black;
-  }
+.bg-support1 {
+  background-color: $support1;
 }
 
-.bg-secondary {
-  background-color: $secondary;
-  color: $white;
+.bg-support2 {
+  background-color: $support2;
 }
 
-.bg-info {
-  background-color: $info;
-  color: $white;
+.bg-support3 {
+  background-color: $support3;
 }
 
-.bg-darkred  {
-  background-color: $color-darkred;
-  color: $white;
+.bg-support4 {
+  background-color: $support4;
 }
 
-.bg-teal {
-  background-color: $color-teal;
-  color: $white;
-}
-
-.bg-cornflowerblue {
-  background-color: $color-cornflowerblue;
+.bg-support5 {
+  background-color: $support5;
 }

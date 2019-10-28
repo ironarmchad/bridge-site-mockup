@@ -18,57 +18,54 @@ $modularscale: (
 // colors
 
 // Color of Bridge logo
-$color-tomato: #e06444;
+$color-bridgelogo: #e06444;
+$color-darkbridgelogo: #d45c3b;
+$color-lightbridgelogo: #ff6f47;
 
 /*
  * Colors calculated from https://www.sessions.edu/color-calculator/
  */
+$color-turquoise: #49f2d9;
+$color-slatepurple: #7439db;
+$color-sandybrown: #fcc440;
 
-$color-turquoise: #44e0c3;
-$color-complementary: $color-turquoise;
+/*
+ * Colors mixed in http://trycolors.com
+ */
+$color-indianpurple: #aa4e80;
+$color-coral: #ee9442;
+$color-cornflowerblue: #5e95cb;
+$color-lightgreen: #a3db8c;
+$color-mediumturquoise: #57b4cf;
+$color-darkorchid: #7d3b79;
+$color-gold: #fcc340;
+$color-lightcyan: #49f2d8;
+$color-denim: #5e95cb;
+$color-boldpink: #f06cc6;
+$color-greenkhaki: #d1e37a;
 
-$color-indianorange: #c77864;
-$color-monochromatic: $color-indianorange;
+// Text colors
+$text-color-light: white;
+$text-color-dark: black;
 
-$color-peru: #e08a44;
-$color-indianpink: #e04451;
-$color-analogous-orange: $color-peru;
-$color-analogous-pink: $color-indianpink;
-
-$color-royalblue: #4460e0;
-$color-limegreen: #51e044;
-$color-splitcomp-blue: $color-royalblue;
-$color-splitcomp-green: $color-limegreen;
-
-$color-blueviolet: #8544e0;
-$color-yellowgreen: #9fe044;
-$color-triad-purple: $color-blueviolet;
-$color-triad-green: $color-yellowgreen;
-
-$color-sandybrown: #e0b144;
-$color-tetra-blue: $color-turquoise;
-$color-tetra-purple: $color-blueviolet;
-$color-tetra-brown: $color-sandybrown;
-
-// scheming colors generated at https://mycolor.space/?hex=%23E06444&sub=1
-
-// Squash palette
-$color-darkcyan: #00a786;
-$color-mediumorchid: #bb63e9;
-
-// Friend palette
-$color-darkred: #8c1904;
-$color-teal: #006789;
-$color-cornflowerblue: #65b5db;
+// Bootstrap-like color definitions
+// support colors that should all contrast with the standard body color
+$support1: $color-lightgreen;
+$support2: $color-gold;
+$support3: $color-mediumturquoise;
+$support4: $color-greenkhaki;
+$support5: $color-boldpink;
 
 
-// Bootstrap color overides
-$primary: $color-tomato;
-$secondary: $color-teal;
-$danger: $color-darkred;
-$info: $color-cornflowerblue;
+// Bootstrap Overrides
+
+// Theme colors
+$primary: $color-darkbridgelogo;
+$secondary: $color-indianpurple;
+$info: $color-slatepurple;
 
 // Body
+$body-bg: #ffefd7;
 
-// Links
-
+// Link
+$link-color: $info;

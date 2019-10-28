@@ -1,0 +1,147 @@
+<div class="container-need-prayer">
+  <form class="form-need-prayer" #prayerForm="ngForm" (ngSubmit)="onSubmit()">
+    <h3>Prayer Request</h3>
+    <p>
+      The power of prayer is incredible and we would love to join with you in prayer. Please fill out the form below to
+      request prayer for yourself or an immediate family member.
+    </p>
+
+    <p>
+      If you would like to request prayer for a friend or extended family member, please know, Bridge can not publish
+      such a request without consent from that individual, but will still pray for the request confidentially among the staff.
+    </p>
+
+    <p><em>
+      Ephesians 6:18 says, "And pray in the Spirit on all occasions with all kinds of prayers and requests. With this in
+      mind, be alert and always keep on praying for all the saints."
+    </em></p>
+
+    <br>
+
+    <div class="form-group"
+      [class.invalid]="prayerForm.form.valid && !(staff || prayerGroup || prayerChain)"
+    >
+      <label>
+        Please indicate who you would like this request shared with (you may choose multiple).
+      </label>
+      <div class="form-check">
+        <input
+          id="staff"
+          name="staff"
+          [(ngModel)]="staff"
+          class="form-check-input"
+          type="checkbox"
+        >
+        <label for="staff" class="form-check-label">Staff</label>
+      </div>
+
+      <div class="form-check">
+        <input
+          id="prayerGroup"
+          name="prayerGroup"
+          [(ngModel)]="prayerGroup"
+          class="form-check-input"
+          type="checkbox"
+        >
+        <label for="prayerGroup" class="form-check-label">Tuesday Night Prayer Group</label>
+      </div>
+
+      <div class="form-check">
+        <input
+          id="prayerChain"
+          name="prayerChain"
+          [(ngModel)]="prayerChain"
+          class="form-check-input"
+          type="checkbox"
+        >
+        <label for="prayerChain" class="form-check-label">Prayer Chain Email Group</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Your Name</label>
+      <div class="form-row">
+        <div class="col-sm">
+          <input
+            id="firstName"
+            name="firstName"
+            #firstName='ngModel'
+            type="text"
+            class="form-control"
+            placeholder="First"
+            required
+            [(ngModel)]="email.firstname"
+          >
+          <div
+            [hidden]="firstName.valid || !firstName.touched"
+            class="alert alert-danger"
+          >First name is required.</div>
+        </div>
+
+        <div class="col-sm">
+          <input
+            id="lastName"
+            name="lastName"
+            #lastName='ngModel'
+            [(ngModel)]="email.lastname"
+            type="text"
+            class="form-control"
+            placeholder="Last"
+            required
+          >
+          <div
+            [hidden]="lastName.valid || !lastName.touched"
+            class="alert alert-danger"
+          >Last name is required.</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <label for="address">Your Email</label>
+      <input
+        id="address"
+        name="address"
+        #address='ngModel'
+        [(ngModel)]="email.address"
+        type="email"
+        class="form-control"
+        required
+      >
+      <div
+        [hidden]="address.valid || !address.touched"
+        class="alert alert-danger"
+      >
+        Email address is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Prayer Request. Please remember to list name(s) of the person that needs prayer.</label>
+      <textarea
+        id="message"
+        name="message"
+        #message='ngModel'
+        [(ngModel)]="email.message"
+        class=form-control
+        type="text"
+        required
+      ></textarea>
+      <div
+        [hidden]="message.valid || !message.touched"
+        class="alert alert-danger"
+      >Please provide a prayer request.</div>
+    </div>
+
+    <div *ngIf="prayerForm.form.valid && !(staff || prayerChain || prayerGroup)"
+         class="alert alert-danger"
+    >
+      Perhaps you still need to select the recipient of the prayer request?
+    </div>
+
+    <div class="text-right">
+      <button type="submit" [disabled]="!prayerForm.form.valid || !(staff || prayerChain || prayerGroup)" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div>

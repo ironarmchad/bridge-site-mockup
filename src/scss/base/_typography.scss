@@ -27,6 +27,11 @@ h4 {
   @include ms-respond(font-size, 1);
 }
 
+a {
+  font-size: 1.05em;
+  font-weight: bold;
+}
+
 .legible-width {
   @include readable-width;
 }

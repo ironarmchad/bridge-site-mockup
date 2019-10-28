@@ -1,0 +1,17 @@
+.container-story {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form-story {
+  max-width: 40em;
+  padding: 2em;
+  background-color: rgba(white, 0.8);
+  box-shadow: 2px 2px 2px rgba(black, .4);
+  border-radius: 2%;
+}
+
+h3 {
+  padding-bottom: 0.5em;
+}

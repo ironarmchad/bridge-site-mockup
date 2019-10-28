@@ -1,4 +1,14 @@
+<div ngbDropdown>
+  <a class="nav-link" ngbDropdownToggle>{{title}}</a>
+  <div ngbDropdownMenu>
+    <ng-content></ng-content>
+  </div>
+</div>
+
+
+<!--
 <a (click)="collapsed = !collapsed" class="nav-link">+ {{title}}</a>
 <div [ngbCollapse]="collapsed">
   <ng-content></ng-content>
 </div>
+-->

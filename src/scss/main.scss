@@ -3,11 +3,12 @@
 /* Priority Loads (eg. tools)*/
 @import "~modularscale-sass/stylesheets/modularscale";
 
-/* Abstracts */
-@import "abstracts/variables";
-@import "abstracts/functions";
-@import "abstracts/mixins";
 
+
+/* Abstracts */
+@import "abstracts/functions";
+@import "abstracts/variables";
+@import "abstracts/mixins";
 
 /* Vendors */
 @import "vendors/bootstrap";
@@ -19,6 +20,7 @@
 @import "layout/base-page";
 
 /* Components */
+@import "components/nav";
 @import "components/navbarlike-light";
 @import "components/info-panel";
 
