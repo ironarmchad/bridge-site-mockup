@@ -2,6 +2,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {NgbCarouselModule, NgbCollapseModule, NgbDropdownModule} from '@ng-bootstrap/ng-bootstrap';
+import {FormsModule} from "@angular/forms";
 
 import {AppComponent} from './app.component';
 import {AnnouncementsComponent} from './anouncements/announcements.component';
@@ -26,7 +27,6 @@ import { BlankComponent } from './blank/blank.component';
 import { PicCardComponent } from './staff-elders/pic-card/pic-card.component';
 import { NeedPrayerComponent } from './need-prayer/need-prayer.component';
 import { TellUsYourStoryComponent } from './tell-us-your-story/tell-us-your-story.component';
-import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [

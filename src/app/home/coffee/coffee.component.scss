@@ -1,0 +1,20 @@
+.container-here {
+  position: relative;
+  width: 100%;
+  height: 36em;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/800px-A_small_cup_of_coffee.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title {
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: 1rem;
+  margin: 0 auto;
+}

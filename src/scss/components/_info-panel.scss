@@ -1,4 +1,36 @@
 .info-panel {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  .info-box {
+    flex: 1 1;
+    min-width: 18em;
+    max-width: 36em;
+    margin: .7rem;
+    padding: 1rem;
+    border-radius: 2%;
+
+    h1, h2, h3, h4 {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+
+    p, ul {
+      padding-bottom: 1rem;
+    }
+
+    fa-icon {
+      margin: 0 auto;
+    }
+  }
+}
+/*
+.info-panel {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -68,4 +100,4 @@
   .info-box {
   }
 }
-
+*/

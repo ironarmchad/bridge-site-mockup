@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ResponsiveService} from "../../_services/responsive.service";
 
 @Component({
   selector: 'app-halloween',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./halloween.component.scss']
 })
 export class HalloweenComponent implements OnInit {
+  isMobile: boolean;
 
-  constructor() { }
+  constructor(
+    private respServ: ResponsiveService
+  ) { }
 
   ngOnInit() {
+    this.isMobile = this.respServ.currentMobileValue;
   }
 
 }

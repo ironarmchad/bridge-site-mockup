@@ -1,4 +1,9 @@
 .ad-banner {
+  border: 1px solid black;
+  height: 36em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   background-color: #022b3d;
   padding: 20px;
